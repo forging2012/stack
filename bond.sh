@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#https://raw.githubusercontent.com/forging2012/stack/master/bond.sh
+
 #定义变量
 centos6_version_number=$(awk '{print $3}' /etc/system-release| awk -F"." '{print $1}')
 centos7_version_number=$(awk '{print $4}' /etc/system-release| awk -F"." '{print $1}')
