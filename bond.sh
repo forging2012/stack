@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#20190320110041——OK
 #定义变量
 centos6_version_number=$(awk '{print $3}' /etc/system-release| awk -F"." '{print $1}')
 centos7_version_number=$(awk '{print $4}' /etc/system-release| awk -F"." '{print $1}')
@@ -21,9 +20,9 @@ Variable(){
 echo_out "获取本机网卡名为：$network_card"
 echo_out "获取本机的地址为：$ip_addr"
 echo_out "获取本机的网关为：$gate_way"
-read -p "请输入第一个网卡名：" name1 
+read -p "请输入第一个网卡名：" name1
 read -p "请输入第二个网卡名：" name2
-read -p "请确认输入要绑定的ip地址：" ipa 
+read -p "请确认输入要绑定的ip地址：" ipa
 read -p "请确认输入将设置的网关地址 " gateway
 echo "network_card_1: $name1"
 echo "network_card_2: $name2"
